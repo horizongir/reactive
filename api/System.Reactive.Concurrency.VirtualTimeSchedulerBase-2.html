@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2">
+  
+  
+  <h1 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2" class="text-break">Class VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for virtual time schedulers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;</span></div>
+      <div class="level2"><a class="xref" href="System.Reactive.Concurrency.HistoricalSchedulerBase.html">HistoricalSchedulerBase</a></div>
+      <div class="level2"><a class="xref" href="System.Reactive.Concurrency.VirtualTimeScheduler-2.html">VirtualTimeScheduler&lt;TAbsolute, TRelative&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></div>
+    <div><a class="xref" href="System.Reactive.Concurrency.IStopwatchProvider.html">IStopwatchProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.Concurrency.html">System.Reactive.Concurrency</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Linq.dll</h6>
+  <h5 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt; : IScheduler, IServiceProvider, IStopwatchProvider where TAbsolute : IComparable&lt;TAbsolute&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAbsolute</span></td>
+        <td><p>Absolute time representation type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TRelative</span></td>
+        <td><p>Relative time representation type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L20">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.#ctor*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.#ctor">VirtualTimeSchedulerBase()</h4>
+  <div class="markdown level1 summary"><p>Creates a new virtual time scheduler with the default value of TAbsolute as the initial clock value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VirtualTimeSchedulerBase()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor__0_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.%23ctor(%600%2CSystem.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L31">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.#ctor*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2__ctor__0_System_Collections_Generic_IComparer__0__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.#ctor(`0,System.Collections.Generic.IComparer{`0})">VirtualTimeSchedulerBase(TAbsolute, IComparer&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new virtual time scheduler with the specified initial clock value and absolute time comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VirtualTimeSchedulerBase(TAbsolute initialClock, IComparer&lt;TAbsolute&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">initialClock</span></td>
+        <td><p>Initial value for the clock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>Comparer to determine causality of events based on absolute time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">comparer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Clock.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Clock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L274">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Clock_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Clock*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Clock" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Clock">Clock</h4>
+  <div class="markdown level1 summary"><p>Gets the scheduler's absolute time clock value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TAbsolute Clock { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Comparer.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Comparer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L74">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Comparer_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Comparer*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Comparer" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Comparer">Comparer</h4>
+  <div class="markdown level1 summary"><p>Gets the comparer used to compare absolute time values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IComparer&lt;TAbsolute&gt; Comparer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;TAbsolute&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_IsEnabled.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.IsEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L65">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_IsEnabled_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.IsEnabled*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_IsEnabled" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.IsEnabled">IsEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets whether the scheduler is enabled to run work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Now.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Now%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L283">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Now_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Now*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Now" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Now">Now</h4>
+  <div class="markdown level1 summary"><p>Gets the scheduler's notion of current time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset Now { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Add__0__1_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Add(%600%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L46">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Add_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Add*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Add__0__1_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Add(`0,`1)">Add(TAbsolute, TRelative)</h4>
+  <div class="markdown level1 summary"><p>Adds a relative time value to an absolute time value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TAbsolute Add(TAbsolute absolute, TRelative relative)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">absolute</span></td>
+        <td><p>Absolute time value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TRelative</span></td>
+        <td><span class="parametername">relative</span></td>
+        <td><p>Relative time value to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><p>The resulting absolute time sum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceBy__1_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.AdvanceBy(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L234">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceBy_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.AdvanceBy*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceBy__1_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.AdvanceBy(`1)">AdvanceBy(TRelative)</h4>
+  <div class="markdown level1 summary"><p>Advances the scheduler's clock by the specified relative time, running all work scheduled for that timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceBy(TRelative time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRelative</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Relative time to advance the scheduler's clock by.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">time</code> is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The scheduler is already running. VirtualTimeScheduler doesn't support running nested work dispatch loops. To simulate time slippage while running work on the scheduler, use <a class="xref" href="System.Reactive.Concurrency.VirtualTimeSchedulerBase-2.html#System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Sleep__1_">Sleep(TRelative)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceTo__0_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.AdvanceTo(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L195">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceTo_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.AdvanceTo*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_AdvanceTo__0_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.AdvanceTo(`0)">AdvanceTo(TAbsolute)</h4>
+  <div class="markdown level1 summary"><p>Advances the scheduler's clock to the specified time, running all work till that point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceTo(TAbsolute time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Absolute time to advance the scheduler's clock to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">time</code> is in the past.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The scheduler is already running. VirtualTimeScheduler doesn't support running nested work dispatch loops. To simulate time slippage while running work on the scheduler, use <a class="xref" href="System.Reactive.Concurrency.VirtualTimeSchedulerBase-2.html#System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Sleep__1_">Sleep(TRelative)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetNext.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.GetNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L292">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetNext_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.GetNext*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetNext" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.GetNext">GetNext()</h4>
+  <div class="markdown level1 summary"><p>Gets the next scheduled item to be executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IScheduledItem&lt;TAbsolute&gt; GetNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduledItem-1.html">IScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><p>The next scheduled item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetService_System_Type_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.GetService(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L307">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetService_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.GetService*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_GetService_System_Type_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.GetService(System.Type)">GetService(Type)</h4>
+  <div class="markdown level1 summary"><p>Discovers scheduler services by interface type. The base class implementation supports
+only the IStopwatchProvider service. To influence service discovery - such as adding
+support for other scheduler services - derived types can override this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetService(Type serviceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">serviceType</span></td>
+        <td><p>Scheduler service interface type to discover.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>Object implementing the requested service, if available; null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_DateTimeOffset_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Schedule%60%601(%60%600%2CSystem.DateTimeOffset%2CSystem.Func%7BSystem.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.IDisposable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L150">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_DateTimeOffset_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule``1(``0,System.DateTimeOffset,System.Func{System.Reactive.Concurrency.IScheduler,``0,System.IDisposable})">Schedule&lt;TState&gt;(TState, DateTimeOffset, Func&lt;IScheduler, TState, IDisposable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed at dueTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable Schedule&lt;TState&gt;(TState state, DateTimeOffset dueTime, Func&lt;IScheduler, TState, IDisposable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>, TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Schedule%60%601(%60%600%2CSystem.Func%7BSystem.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.IDisposable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L116">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule``1(``0,System.Func{System.Reactive.Concurrency.IScheduler,``0,System.IDisposable})">Schedule&lt;TState&gt;(TState, Func&lt;IScheduler, TState, IDisposable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable Schedule&lt;TState&gt;(TState state, Func&lt;IScheduler, TState, IDisposable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>, TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_TimeSpan_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Schedule%60%601(%60%600%2CSystem.TimeSpan%2CSystem.Func%7BSystem.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.IDisposable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L133">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Schedule__1___0_System_TimeSpan_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Schedule``1(``0,System.TimeSpan,System.Func{System.Reactive.Concurrency.IScheduler,``0,System.IDisposable})">Schedule&lt;TState&gt;(TState, TimeSpan, Func&lt;IScheduler, TState, IDisposable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed after dueTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable Schedule&lt;TState&gt;(TState state, TimeSpan dueTime, Func&lt;IScheduler, TState, IDisposable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Relative time after which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>, TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleAbsolute__1___0__0_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.ScheduleAbsolute%60%601(%60%600%2C%600%2CSystem.Func%7BSystem.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.IDisposable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L88">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleAbsolute_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ScheduleAbsolute*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleAbsolute__1___0__0_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ScheduleAbsolute``1(``0,`0,System.Func{System.Reactive.Concurrency.IScheduler,``0,System.IDisposable})">ScheduleAbsolute&lt;TState&gt;(TState, TAbsolute, Func&lt;IScheduler, TState, IDisposable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed at dueTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IDisposable ScheduleAbsolute&lt;TState&gt;(TState state, TAbsolute dueTime, Func&lt;IScheduler, TState, IDisposable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>, TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleRelative__1___0__1_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.ScheduleRelative%60%601(%60%600%2C%601%2CSystem.Func%7BSystem.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.IDisposable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L98">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleRelative_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ScheduleRelative*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ScheduleRelative__1___0__1_System_Func_System_Reactive_Concurrency_IScheduler___0_System_IDisposable__" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ScheduleRelative``1(``0,`1,System.Func{System.Reactive.Concurrency.IScheduler,``0,System.IDisposable})">ScheduleRelative&lt;TState&gt;(TState, TRelative, Func&lt;IScheduler, TState, IDisposable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed at dueTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable ScheduleRelative&lt;TState&gt;(TState state, TRelative dueTime, Func&lt;IScheduler, TState, IDisposable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TRelative</span></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Relative time after which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>, TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Sleep__1_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Sleep(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L260">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Sleep_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Sleep*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Sleep__1_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Sleep(`1)">Sleep(TRelative)</h4>
+  <div class="markdown level1 summary"><p>Advances the scheduler's clock by the specified relative time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sleep(TRelative time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRelative</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Relative time to advance the scheduler's clock by.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">time</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Start.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L161">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Start_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Start*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Start" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Starts the virtual time scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_StartStopwatch.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.StartStopwatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L319">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_StartStopwatch_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.StartStopwatch*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_StartStopwatch" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.StartStopwatch">StartStopwatch()</h4>
+  <div class="markdown level1 summary"><p>Starts a new stopwatch object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStopwatch StartStopwatch()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IStopwatch.html">IStopwatch</a></td>
+        <td><p>New stopwatch object; started at the time of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Stop.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L184">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Stop_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Stop*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_Stop" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stops the virtual time scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToDateTimeOffset__0_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.ToDateTimeOffset(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L53">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToDateTimeOffset_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ToDateTimeOffset*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToDateTimeOffset__0_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ToDateTimeOffset(`0)">ToDateTimeOffset(TAbsolute)</h4>
+  <div class="markdown level1 summary"><p>Converts the absolute time value to a DateTimeOffset value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract DateTimeOffset ToDateTimeOffset(TAbsolute absolute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">absolute</span></td>
+        <td><p>Absolute time value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><p>The corresponding DateTimeOffset value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToRelative_System_TimeSpan_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.ToRelative(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L60">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToRelative_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ToRelative*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_ToRelative_System_TimeSpan_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.ToRelative(System.TimeSpan)">ToRelative(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Converts the TimeSpan value to a relative time value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TRelative ToRelative(TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td><p>TimeSpan value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRelative</span></td>
+        <td><p>The corresponding relative time value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_System_IServiceProvider_GetService_System_Type_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602.System%23IServiceProvider%23GetService(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L295">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_System_IServiceProvider_GetService_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.System#IServiceProvider#GetService*"></a>
+  <h4 id="System_Reactive_Concurrency_VirtualTimeSchedulerBase_2_System_IServiceProvider_GetService_System_Type_" data-uid="System.Reactive.Concurrency.VirtualTimeSchedulerBase`2.System#IServiceProvider#GetService(System.Type)">IServiceProvider.GetService(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object IServiceProvider.GetService(Type serviceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">serviceType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">System.IServiceProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.IStopwatchProvider.html">IStopwatchProvider</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.VirtualTimeSchedulerExtensions.html#System_Reactive_Concurrency_VirtualTimeSchedulerExtensions_ScheduleRelative__2_System_Reactive_Concurrency_VirtualTimeSchedulerBase___0___1____1_System_Action_">VirtualTimeSchedulerExtensions.ScheduleRelative&lt;TAbsolute, TRelative&gt;(VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;, TRelative, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.VirtualTimeSchedulerExtensions.html#System_Reactive_Concurrency_VirtualTimeSchedulerExtensions_ScheduleAbsolute__2_System_Reactive_Concurrency_VirtualTimeSchedulerBase___0___1____0_System_Action_">VirtualTimeSchedulerExtensions.ScheduleAbsolute&lt;TAbsolute, TRelative&gt;(VirtualTimeSchedulerBase&lt;TAbsolute, TRelative&gt;, TAbsolute, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_">Scheduler.DisableOptimizations(IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_System_Type___">Scheduler.DisableOptimizations(IScheduler, Type[])</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Catch__1_System_Reactive_Concurrency_IScheduler_System_Func___0_System_Boolean__">Scheduler.Catch&lt;TException&gt;(IScheduler, Func&lt;TException, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Func___0___0__">Scheduler.SchedulePeriodic&lt;TState&gt;(IScheduler, TState, TimeSpan, Func&lt;TState, TState&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0__">Scheduler.SchedulePeriodic&lt;TState&gt;(IScheduler, TState, TimeSpan, Action&lt;TState&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_SchedulePeriodic_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_">Scheduler.SchedulePeriodic(IScheduler, TimeSpan, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_StartStopwatch_System_Reactive_Concurrency_IScheduler_">Scheduler.StartStopwatch(IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_AsLongRunning_System_Reactive_Concurrency_IScheduler_">Scheduler.AsLongRunning(IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_AsStopwatchProvider_System_Reactive_Concurrency_IScheduler_">Scheduler.AsStopwatchProvider(IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_AsPeriodic_System_Reactive_Concurrency_IScheduler_">Scheduler.AsPeriodic(IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_System_Action__">Scheduler.Schedule(IScheduler, Action&lt;Action&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_Action___0_System_Action___0___">Scheduler.Schedule&lt;TState&gt;(IScheduler, TState, Action&lt;TState, Action&lt;TState&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_System_Action_System_TimeSpan___">Scheduler.Schedule(IScheduler, TimeSpan, Action&lt;Action&lt;TimeSpan&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0_System_Action___0_System_TimeSpan___">Scheduler.Schedule&lt;TState&gt;(IScheduler, TState, TimeSpan, Action&lt;TState, Action&lt;TState, TimeSpan&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_System_Action_System_DateTimeOffset___">Scheduler.Schedule(IScheduler, DateTimeOffset, Action&lt;Action&lt;DateTimeOffset&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_DateTimeOffset_System_Action___0_System_Action___0_System_DateTimeOffset___">Scheduler.Schedule&lt;TState&gt;(IScheduler, TState, DateTimeOffset, Action&lt;TState, Action&lt;TState, DateTimeOffset&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_">Scheduler.Schedule(IScheduler, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_">Scheduler.Schedule(IScheduler, TimeSpan, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_">Scheduler.Schedule(IScheduler, DateTimeOffset, Action)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_VirtualTimeSchedulerBase_2.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.VirtualTimeSchedulerBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Concurrency/VirtualTimeScheduler.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

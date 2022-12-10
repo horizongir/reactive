@@ -1,0 +1,1391 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Observer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Observer
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.Observer">
+  
+  
+  <h1 id="System_Reactive_Observer" data-uid="System.Reactive.Observer" class="text-break">Class Observer
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a set of static methods for creating observers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Observer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.html">System.Reactive</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Core.dll</h6>
+  <h5 id="System_Reactive_Observer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Observer</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_AsObserver__1_System_IObserver___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.AsObserver%60%601(System.IObserver%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L127">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_AsObserver_" data-uid="System.Reactive.Observer.AsObserver*"></a>
+  <h4 id="System_Reactive_Observer_AsObserver__1_System_IObserver___0__" data-uid="System.Reactive.Observer.AsObserver``1(System.IObserver{``0})">AsObserver&lt;T&gt;(IObserver&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Hides the identity of an observer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; AsObserver&lt;T&gt;(this IObserver&lt;T&gt; observer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>An observer whose identity to hide.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that hides the identity of the specified observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Checked__1_System_IObserver___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Checked%60%601(System.IObserver%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L143">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Checked_" data-uid="System.Reactive.Observer.Checked*"></a>
+  <h4 id="System_Reactive_Observer_Checked__1_System_IObserver___0__" data-uid="System.Reactive.Observer.Checked``1(System.IObserver{``0})">Checked&lt;T&gt;(IObserver&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+If a violation is detected, an InvalidOperationException is thrown from the offending observer method call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Checked&lt;T&gt;(this IObserver&lt;T&gt; observer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer whose callback invocations should be checked for grammar violations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Create__1_System_Action___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Create%60%601(System.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L55">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Create_" data-uid="System.Reactive.Observer.Create*"></a>
+  <h4 id="System_Reactive_Observer_Create__1_System_Action___0__" data-uid="System.Reactive.Observer.Create``1(System.Action{``0})">Create&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an observer from the specified OnNext action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Create&lt;T&gt;(Action&lt;T&gt; onNext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onNext</span></td>
+        <td><p>Observer's OnNext action implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>The observer object implemented using the given actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">onNext</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Create__1_System_Action___0__System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Create%60%601(System.Action%7B%60%600%7D%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L89">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Create_" data-uid="System.Reactive.Observer.Create*"></a>
+  <h4 id="System_Reactive_Observer_Create__1_System_Action___0__System_Action_" data-uid="System.Reactive.Observer.Create``1(System.Action{``0},System.Action)">Create&lt;T&gt;(Action&lt;T&gt;, Action)</h4>
+  <div class="markdown level1 summary"><p>Creates an observer from the specified OnNext and OnCompleted actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Create&lt;T&gt;(Action&lt;T&gt; onNext, Action onCompleted)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onNext</span></td>
+        <td><p>Observer's OnNext action implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onCompleted</span></td>
+        <td><p>Observer's OnCompleted action implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>The observer object implemented using the given actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">onNext</code> or <code data-dev-comment-type="paramref" class="paramref">onCompleted</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Create__1_System_Action___0__System_Action_System_Exception__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Create%60%601(System.Action%7B%60%600%7D%2CSystem.Action%7BSystem.Exception%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L71">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Create_" data-uid="System.Reactive.Observer.Create*"></a>
+  <h4 id="System_Reactive_Observer_Create__1_System_Action___0__System_Action_System_Exception__" data-uid="System.Reactive.Observer.Create``1(System.Action{``0},System.Action{System.Exception})">Create&lt;T&gt;(Action&lt;T&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an observer from the specified OnNext and OnError actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Create&lt;T&gt;(Action&lt;T&gt; onNext, Action&lt;Exception&gt; onError)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onNext</span></td>
+        <td><p>Observer's OnNext action implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Observer's OnError action implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>The observer object implemented using the given actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">onNext</code> or <code data-dev-comment-type="paramref" class="paramref">onError</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Create__1_System_Action___0__System_Action_System_Exception__System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Create%60%601(System.Action%7B%60%600%7D%2CSystem.Action%7BSystem.Exception%7D%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L108">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Create_" data-uid="System.Reactive.Observer.Create*"></a>
+  <h4 id="System_Reactive_Observer_Create__1_System_Action___0__System_Action_System_Exception__System_Action_" data-uid="System.Reactive.Observer.Create``1(System.Action{``0},System.Action{System.Exception},System.Action)">Create&lt;T&gt;(Action&lt;T&gt;, Action&lt;Exception&gt;, Action)</h4>
+  <div class="markdown level1 summary"><p>Creates an observer from the specified OnNext, OnError, and OnCompleted actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Create&lt;T&gt;(Action&lt;T&gt; onNext, Action&lt;Exception&gt; onError, Action onCompleted)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onNext</span></td>
+        <td><p>Observer's OnNext action implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Observer's OnError action implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onCompleted</span></td>
+        <td><p>Observer's OnCompleted action implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>The observer object implemented using the given actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">onNext</code> or <code data-dev-comment-type="paramref" class="paramref">onError</code> or <code data-dev-comment-type="paramref" class="paramref">onCompleted</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.NotifyOn%60%601(System.IObserver%7B%60%600%7D%2CSystem.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L249">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_NotifyOn_" data-uid="System.Reactive.Observer.NotifyOn*"></a>
+  <h4 id="System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Observer.NotifyOn``1(System.IObserver{``0},System.Reactive.Concurrency.IScheduler)">NotifyOn&lt;T&gt;(IObserver&lt;T&gt;, IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Schedules the invocation of observer methods on the given scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; NotifyOn&lt;T&gt;(this IObserver&lt;T&gt; observer, IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer to schedule messages for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to schedule observer messages on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>Observer whose messages are scheduled on the given scheduler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> or <code data-dev-comment-type="paramref" class="paramref">scheduler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Threading_SynchronizationContext_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.NotifyOn%60%601(System.IObserver%7B%60%600%7D%2CSystem.Threading.SynchronizationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L268">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_NotifyOn_" data-uid="System.Reactive.Observer.NotifyOn*"></a>
+  <h4 id="System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Threading_SynchronizationContext_" data-uid="System.Reactive.Observer.NotifyOn``1(System.IObserver{``0},System.Threading.SynchronizationContext)">NotifyOn&lt;T&gt;(IObserver&lt;T&gt;, SynchronizationContext)</h4>
+  <div class="markdown level1 summary"><p>Schedules the invocation of observer methods on the given synchonization context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; NotifyOn&lt;T&gt;(this IObserver&lt;T&gt; observer, SynchronizationContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer to schedule messages for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext">SynchronizationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Synchonization context to schedule observer messages on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>Observer whose messages are scheduled on the given synchonization context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> or <code data-dev-comment-type="paramref" class="paramref">context</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Synchronize__1_System_IObserver___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Synchronize%60%601(System.IObserver%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L164">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Synchronize_" data-uid="System.Reactive.Observer.Synchronize*"></a>
+  <h4 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__" data-uid="System.Reactive.Observer.Synchronize``1(System.IObserver{``0})">Synchronize&lt;T&gt;(IObserver&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchronizes access to the observer such that its callback methods cannot be called concurrently from multiple threads. This overload is useful when coordinating access to an observer.
+Notice reentrant observer callbacks on the same thread are still possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Synchronize&lt;T&gt;(IObserver&lt;T&gt; observer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer whose callbacks should be synchronized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that delivers callbacks to the specified observer in a synchronized manner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.monitor">Monitor</a> is used to perform the synchronization, there's no protection against reentrancy from the same thread.
+Hence, overlapped observer callbacks are still possible, which is invalid behavior according to the observer grammar. In order to protect against this behavior as
+well, use the <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Boolean_">Synchronize&lt;T&gt;(IObserver&lt;T&gt;, Boolean)</a> overload, passing true for the second parameter.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Boolean_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Synchronize%60%601(System.IObserver%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L186">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Synchronize_" data-uid="System.Reactive.Observer.Synchronize*"></a>
+  <h4 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Boolean_" data-uid="System.Reactive.Observer.Synchronize``1(System.IObserver{``0},System.Boolean)">Synchronize&lt;T&gt;(IObserver&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Synchronizes access to the observer such that its callback methods cannot be called concurrently. This overload is useful when coordinating access to an observer.
+The <code data-dev-comment-type="paramref" class="paramref">preventReentrancy</code> parameter configures the type of lock used for synchronization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Synchronize&lt;T&gt;(IObserver&lt;T&gt; observer, bool preventReentrancy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer whose callbacks should be synchronized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">preventReentrancy</span></td>
+        <td><p>If set to true, reentrant observer callbacks will be queued up and get delivered to the observer in a sequential manner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that delivers callbacks to the specified observer in a synchronized manner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the <code data-dev-comment-type="paramref" class="paramref">preventReentrancy</code> parameter is set to false, behavior is identical to the <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_Synchronize__1_System_IObserver___0__">Synchronize&lt;T&gt;(IObserver&lt;T&gt;)</a> overload which uses
+a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.monitor">Monitor</a> for synchronization. When the <code data-dev-comment-type="paramref" class="paramref">preventReentrancy</code> parameter is set to true, an <a class="xref" href="System.Reactive.Concurrency.AsyncLock.html">AsyncLock</a>
+is used to queue up callbacks to the specified observer if a reentrant call is made.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Object_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Synchronize%60%601(System.IObserver%7B%60%600%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L212">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Synchronize_" data-uid="System.Reactive.Observer.Synchronize*"></a>
+  <h4 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Object_" data-uid="System.Reactive.Observer.Synchronize``1(System.IObserver{``0},System.Object)">Synchronize&lt;T&gt;(IObserver&lt;T&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Synchronizes access to the observer such that its callback methods cannot be called concurrently by multiple threads, using the specified gate object for use by a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.monitor">Monitor</a>-based lock.
+This overload is useful when coordinating multiple observers that access shared state by synchronizing on a common gate object.
+Notice reentrant observer callbacks on the same thread are still possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Synchronize&lt;T&gt;(IObserver&lt;T&gt; observer, object gate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer whose callbacks should be synchronized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">gate</span></td>
+        <td><p>Gate object to synchronize each observer call on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that delivers callbacks to the specified observer in a synchronized manner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.monitor">Monitor</a> is used to perform the synchronization, there's no protection against reentrancy from the same thread.
+Hence, overlapped observer callbacks are still possible, which is invalid behavior according to the observer grammar. In order to protect against this behavior as
+well, use the <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Reactive_Concurrency_AsyncLock_">Synchronize&lt;T&gt;(IObserver&lt;T&gt;, AsyncLock)</a> overload.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> or <code data-dev-comment-type="paramref" class="paramref">gate</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Reactive_Concurrency_AsyncLock_.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.Synchronize%60%601(System.IObserver%7B%60%600%7D%2CSystem.Reactive.Concurrency.AsyncLock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L231">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_Synchronize_" data-uid="System.Reactive.Observer.Synchronize*"></a>
+  <h4 id="System_Reactive_Observer_Synchronize__1_System_IObserver___0__System_Reactive_Concurrency_AsyncLock_" data-uid="System.Reactive.Observer.Synchronize``1(System.IObserver{``0},System.Reactive.Concurrency.AsyncLock)">Synchronize&lt;T&gt;(IObserver&lt;T&gt;, AsyncLock)</h4>
+  <div class="markdown level1 summary"><p>Synchronizes access to the observer such that its callback methods cannot be called concurrently, using the specified asynchronous lock to protect against concurrent and reentrant access.
+This overload is useful when coordinating multiple observers that access shared state by synchronizing on a common asynchronous lock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; Synchronize&lt;T&gt;(IObserver&lt;T&gt; observer, AsyncLock asyncLock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>The observer whose callbacks should be synchronized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.AsyncLock.html">AsyncLock</a></td>
+        <td><span class="parametername">asyncLock</span></td>
+        <td><p>Gate object to synchronize each observer call on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>An observer that delivers callbacks to the specified observer in a synchronized manner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the source observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> or <code data-dev-comment-type="paramref" class="paramref">asyncLock</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_ToNotifier__1_System_IObserver___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.ToNotifier%60%601(System.IObserver%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L39">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_ToNotifier_" data-uid="System.Reactive.Observer.ToNotifier*"></a>
+  <h4 id="System_Reactive_Observer_ToNotifier__1_System_IObserver___0__" data-uid="System.Reactive.Observer.ToNotifier``1(System.IObserver{``0})">ToNotifier&lt;T&gt;(IObserver&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a notification callback from an observer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;Notification&lt;T&gt;&gt; ToNotifier&lt;T&gt;(this IObserver&lt;T&gt; observer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>Observer object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="System.Reactive.Notification-1.html">Notification</a>&lt;T&gt;&gt;</td>
+        <td><p>The action that forwards its input notification to the underlying observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer_ToObserver__1_System_Action_System_Reactive_Notification___0___.md&amp;value=---%0Auid%3A%20System.Reactive.Observer.ToObserver%60%601(System.Action%7BSystem.Reactive.Notification%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L20">View Source</a>
+  </span>
+  <a id="System_Reactive_Observer_ToObserver_" data-uid="System.Reactive.Observer.ToObserver*"></a>
+  <h4 id="System_Reactive_Observer_ToObserver__1_System_Action_System_Reactive_Notification___0___" data-uid="System.Reactive.Observer.ToObserver``1(System.Action{System.Reactive.Notification{``0}})">ToObserver&lt;T&gt;(Action&lt;Notification&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an observer from a notification callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver&lt;T&gt; ToObserver&lt;T&gt;(this Action&lt;Notification&lt;T&gt;&gt; handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="System.Reactive.Notification-1.html">Notification</a>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Action that handles a notification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</td>
+        <td><p>The observer object that invokes the specified handler using a notification corresponding to each message it receives.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements received by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Observer.md&amp;value=---%0Auid%3A%20System.Reactive.Observer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Observer.Extensions.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

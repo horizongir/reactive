@@ -1,0 +1,2039 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scheduler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scheduler
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.Concurrency.Scheduler">
+  
+  
+  <h1 id="System_Reactive_Concurrency_Scheduler" data-uid="System.Reactive.Concurrency.Scheduler" class="text-break">Class Scheduler
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a set of static properties to access commonly used schedulers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Scheduler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.Concurrency.html">System.Reactive.Concurrency</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Core.dll</h6>
+  <h5 id="System_Reactive_Concurrency_Scheduler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Scheduler</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_CurrentThread.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.CurrentThread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L56">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_CurrentThread_" data-uid="System.Reactive.Concurrency.Scheduler.CurrentThread*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_CurrentThread" data-uid="System.Reactive.Concurrency.Scheduler.CurrentThread">CurrentThread</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work as soon as possible on the current thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurrentThreadScheduler CurrentThread { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.CurrentThreadScheduler.html">CurrentThreadScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Default.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Default%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L67">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Default_" data-uid="System.Reactive.Concurrency.Scheduler.Default*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Default" data-uid="System.Reactive.Concurrency.Scheduler.Default">Default</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work on the platform's default scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DefaultScheduler Default { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.DefaultScheduler.html">DefaultScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Immediate.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Immediate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L45">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Immediate_" data-uid="System.Reactive.Concurrency.Scheduler.Immediate*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Immediate" data-uid="System.Reactive.Concurrency.Scheduler.Immediate">Immediate</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work immediately on the current thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmediateScheduler Immediate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ImmediateScheduler.html">ImmediateScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_NewThread.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.NewThread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L109">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_NewThread_" data-uid="System.Reactive.Concurrency.Scheduler.NewThread*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_NewThread" data-uid="System.Reactive.Concurrency.Scheduler.NewThread">NewThread</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work on a new thread using default thread creation options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This property is no longer supported due to refactoring of the API surface and elimination of platform-specific dependencies. Please add a reference to the System.Reactive.PlatformServices assembly for your target platform and use NewThreadScheduler.Default to obtain an instance of this scheduler type. See http://go.microsoft.com/fwlink/?LinkID=260866 for more information.&quot;)]
+public static IScheduler NewThread { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Now.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Now%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L22">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Now_" data-uid="System.Reactive.Concurrency.Scheduler.Now*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Now" data-uid="System.Reactive.Concurrency.Scheduler.Now">Now</h4>
+  <div class="markdown level1 summary"><p>Gets the current time according to the local machine's system clock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTimeOffset Now { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_TaskPool.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.TaskPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L124">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_TaskPool_" data-uid="System.Reactive.Concurrency.Scheduler.TaskPool*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_TaskPool" data-uid="System.Reactive.Concurrency.Scheduler.TaskPool">TaskPool</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work on Task Parallel Library (TPL) task pool using the default TaskScheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This property is no longer supported due to refactoring of the API surface and elimination of platform-specific dependencies. Please add a reference to the System.Reactive.PlatformServices assembly for your target platform and use TaskPoolScheduler.Default to obtain an instance of this scheduler type. See http://go.microsoft.com/fwlink/?LinkID=260866 for more information.&quot;)]
+public static IScheduler TaskPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_ThreadPool.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.ThreadPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L95">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_ThreadPool_" data-uid="System.Reactive.Concurrency.Scheduler.ThreadPool*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_ThreadPool" data-uid="System.Reactive.Concurrency.Scheduler.ThreadPool">ThreadPool</h4>
+  <div class="markdown level1 summary"><p>Gets a scheduler that schedules work on the thread pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This property is no longer supported due to refactoring of the API surface and elimination of platform-specific dependencies. Consider using Scheduler.Default to obtain the platform's most appropriate pool-based scheduler. In order to access a specific pool-based scheduler, please add a reference to the System.Reactive.PlatformServices assembly for your target platform and use the appropriate scheduler in the System.Reactive.Concurrency namespace. See http://go.microsoft.com/fwlink/?LinkID=260866 for more information.&quot;)]
+public static IScheduler ThreadPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_AsLongRunning_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.AsLongRunning(System.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.cs/#L29">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_AsLongRunning_" data-uid="System.Reactive.Concurrency.Scheduler.AsLongRunning*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_AsLongRunning_System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Concurrency.Scheduler.AsLongRunning(System.Reactive.Concurrency.IScheduler)">AsLongRunning(IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Returns the ISchedulerLongRunning implementation of the specified scheduler, or null if no such implementation is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISchedulerLongRunning AsLongRunning(this IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to get the ISchedulerLongRunning implementation for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ISchedulerLongRunning.html">ISchedulerLongRunning</a></td>
+        <td><p>The scheduler's ISchedulerLongRunning implementation if available; null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_Scheduler_AsLongRunning_System_Reactive_Concurrency_IScheduler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This helper method is made available for query operator authors in order to discover scheduler services by using the required
+IServiceProvider pattern, which allows for interception or redefinition of scheduler services.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_AsPeriodic_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.AsPeriodic(System.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.cs/#L80">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_AsPeriodic_" data-uid="System.Reactive.Concurrency.Scheduler.AsPeriodic*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_AsPeriodic_System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Concurrency.Scheduler.AsPeriodic(System.Reactive.Concurrency.IScheduler)">AsPeriodic(IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Returns the IStopwatchProvider implementation of the specified scheduler, or null if no such implementation is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISchedulerPeriodic AsPeriodic(this IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to get the IStopwatchProvider implementation for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ISchedulerPeriodic.html">ISchedulerPeriodic</a></td>
+        <td><p>The scheduler's IStopwatchProvider implementation if available; null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_Scheduler_AsPeriodic_System_Reactive_Concurrency_IScheduler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This helper method is made available for query operator authors in order to discover scheduler services by using the required
+IServiceProvider pattern, which allows for interception or redefinition of scheduler services.
+</p>
+<p>
+Consider using the Scheduler.SchedulePeriodic extension methods for IScheduler in case periodic scheduling is required and
+emulation of periodic behavior using other scheduler services is desirable. Use of this method is recommended for best-effort
+use of the periodic scheduling service, where the caller falls back to not using periodic scheduling if this facility wasn&apos;t
+found.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_AsStopwatchProvider_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.AsStopwatchProvider(System.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.cs/#L54">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_AsStopwatchProvider_" data-uid="System.Reactive.Concurrency.Scheduler.AsStopwatchProvider*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_AsStopwatchProvider_System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Concurrency.Scheduler.AsStopwatchProvider(System.Reactive.Concurrency.IScheduler)">AsStopwatchProvider(IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Returns the IStopwatchProvider implementation of the specified scheduler, or null if no such implementation is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStopwatchProvider AsStopwatchProvider(this IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to get the IStopwatchProvider implementation for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IStopwatchProvider.html">IStopwatchProvider</a></td>
+        <td><p>The scheduler's IStopwatchProvider implementation if available; null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_Scheduler_AsStopwatchProvider_System_Reactive_Concurrency_IScheduler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This helper method is made available for query operator authors in order to discover scheduler services by using the required
+IServiceProvider pattern, which allows for interception or redefinition of scheduler services.
+</p>
+<p>
+Consider using <a class="xref" href="System.Reactive.Concurrency.Scheduler.html#System_Reactive_Concurrency_Scheduler_StartStopwatch_System_Reactive_Concurrency_IScheduler_">StartStopwatch(IScheduler)</a> in case a stopwatch is required, but use of emulation stopwatch based
+on the scheduler&apos;s clock is acceptable. Use of this method is recommended for best-effort use of the stopwatch provider
+scheduler service, where the caller falls back to not using stopwatches if this facility wasn&apos;t found.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Catch__1_System_Reactive_Concurrency_IScheduler_System_Func___0_System_Boolean__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Catch%60%601(System.Reactive.Concurrency.IScheduler%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Wrappers.cs/#L48">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Catch_" data-uid="System.Reactive.Concurrency.Scheduler.Catch*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Catch__1_System_Reactive_Concurrency_IScheduler_System_Func___0_System_Boolean__" data-uid="System.Reactive.Concurrency.Scheduler.Catch``1(System.Reactive.Concurrency.IScheduler,System.Func{``0,System.Boolean})">Catch&lt;TException&gt;(IScheduler, Func&lt;TException, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a scheduler that wraps the original scheduler, adding exception handling for scheduled actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IScheduler Catch&lt;TException&gt;(this IScheduler scheduler, Func&lt;TException, bool&gt; handler)
+    where TException : Exception</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to apply an exception filter for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TException, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Handler that's run if an exception is caught. The exception will be rethrown if the handler returns false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><p>Wrapper around the original scheduler, enforcing exception handling.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TException</span></td>
+        <td><p>Type of the exception to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">handler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.DisableOptimizations(System.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Wrappers.cs/#L15">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_DisableOptimizations_" data-uid="System.Reactive.Concurrency.Scheduler.DisableOptimizations*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Concurrency.Scheduler.DisableOptimizations(System.Reactive.Concurrency.IScheduler)">DisableOptimizations(IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Returns a scheduler that represents the original scheduler, without any of its interface-based optimizations (e.g. long running scheduling).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IScheduler DisableOptimizations(this IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to disable all optimizations for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><p>Proxy to the original scheduler but without any optimizations enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_System_Type___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.DisableOptimizations(System.Reactive.Concurrency.IScheduler%2CSystem.Type%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Wrappers.cs/#L30">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_DisableOptimizations_" data-uid="System.Reactive.Concurrency.Scheduler.DisableOptimizations*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_DisableOptimizations_System_Reactive_Concurrency_IScheduler_System_Type___" data-uid="System.Reactive.Concurrency.Scheduler.DisableOptimizations(System.Reactive.Concurrency.IScheduler,System.Type[])">DisableOptimizations(IScheduler, Type[])</h4>
+  <div class="markdown level1 summary"><p>Returns a scheduler that represents the original scheduler, without the specified set of interface-based optimizations (e.g. long running scheduling).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IScheduler DisableOptimizations(this IScheduler scheduler, params Type[] optimizationInterfaces)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to disable the specified optimizations for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</td>
+        <td><span class="parametername">optimizationInterfaces</span></td>
+        <td><p>Types of the optimization interfaces that have to be disabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><p>Proxy to the original scheduler but without the specified optimizations enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">optimizationInterfaces</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Normalize_System_TimeSpan_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Normalize(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.cs/#L35">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Normalize_" data-uid="System.Reactive.Concurrency.Scheduler.Normalize*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Normalize_System_TimeSpan_" data-uid="System.Reactive.Concurrency.Scheduler.Normalize(System.TimeSpan)">Normalize(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Normalizes the specified TimeSpan value to a positive value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeSpan Normalize(TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td><p>The TimeSpan value to normalize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><p>The specified TimeSpan value if it is zero or positive; otherwise, TimeSpan.Zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Simple.cs/#L17">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.Action)">Schedule(IScheduler, Action)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_System_Action__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.Action%7BSystem.Action%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L17">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_Action_System_Action__" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.Action{System.Action})">Schedule(IScheduler, Action&lt;Action&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, Action&lt;Action&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The parameter passed to the action is used to trigger recursive scheduling of the action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.DateTimeOffset%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Simple.cs/#L53">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.DateTimeOffset,System.Action)">Schedule(IScheduler, DateTimeOffset, Action)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed at the specified absolute due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, DateTimeOffset dueTime, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_System_Action_System_DateTimeOffset___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.DateTimeOffset%2CSystem.Action%7BSystem.Action%7BSystem.DateTimeOffset%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L174">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_DateTimeOffset_System_Action_System_Action_System_DateTimeOffset___" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.DateTimeOffset,System.Action{System.Action{System.DateTimeOffset}})">Schedule(IScheduler, DateTimeOffset, Action&lt;Action&lt;DateTimeOffset&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively at a specified absolute due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, DateTimeOffset dueTime, Action&lt;Action&lt;DateTimeOffset&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which to execute the action for the first time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The parameter passed to the action is used to trigger recursive scheduling of the action at the specified absolute time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.TimeSpan%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Simple.cs/#L35">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.TimeSpan,System.Action)">Schedule(IScheduler, TimeSpan, Action)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed after the specified relative due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, TimeSpan dueTime, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Relative time after which to execute the action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_System_Action_System_TimeSpan___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler%2CSystem.TimeSpan%2CSystem.Action%7BSystem.Action%7BSystem.TimeSpan%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L95">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_System_Action_System_TimeSpan___" data-uid="System.Reactive.Concurrency.Scheduler.Schedule(System.Reactive.Concurrency.IScheduler,System.TimeSpan,System.Action{System.Action{System.TimeSpan}})">Schedule(IScheduler, TimeSpan, Action&lt;Action&lt;TimeSpan&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively after a specified relative due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule(this IScheduler scheduler, TimeSpan dueTime, Action&lt;Action&lt;TimeSpan&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Relative time after which to execute the action for the first time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The parameter passed to the action is used to trigger recursive scheduling of the action at the specified relative time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_Action___0_System_Action___0___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule%60%601(System.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.Action%7B%60%600%2CSystem.Action%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L36">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_Action___0_System_Action___0___" data-uid="System.Reactive.Concurrency.Scheduler.Schedule``1(System.Reactive.Concurrency.IScheduler,``0,System.Action{``0,System.Action{``0}})">Schedule&lt;TState&gt;(IScheduler, TState, Action&lt;TState, Action&lt;TState&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule&lt;TState&gt;(this IScheduler scheduler, TState state, Action&lt;TState, Action&lt;TState&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TState&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The last parameter passed to the action is used to trigger recursive scheduling of the action, passing in recursive invocation state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_DateTimeOffset_System_Action___0_System_Action___0_System_DateTimeOffset___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule%60%601(System.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.DateTimeOffset%2CSystem.Action%7B%60%600%2CSystem.Action%7B%60%600%2CSystem.DateTimeOffset%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L194">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_DateTimeOffset_System_Action___0_System_Action___0_System_DateTimeOffset___" data-uid="System.Reactive.Concurrency.Scheduler.Schedule``1(System.Reactive.Concurrency.IScheduler,``0,System.DateTimeOffset,System.Action{``0,System.Action{``0,System.DateTimeOffset}})">Schedule&lt;TState&gt;(IScheduler, TState, DateTimeOffset, Action&lt;TState, Action&lt;TState, DateTimeOffset&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively at a specified absolute due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule&lt;TState&gt;(this IScheduler scheduler, TState state, DateTimeOffset dueTime, Action&lt;TState, Action&lt;TState, DateTimeOffset&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which to execute the action for the first time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The last parameter passed to the action is used to trigger recursive scheduling of the action, passing in the recursive due time and invocation state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0_System_Action___0_System_TimeSpan___.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.Schedule%60%601(System.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.TimeSpan%2CSystem.Action%7B%60%600%2CSystem.Action%7B%60%600%2CSystem.TimeSpan%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Recursive.cs/#L115">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_Schedule_" data-uid="System.Reactive.Concurrency.Scheduler.Schedule*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_Schedule__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0_System_Action___0_System_TimeSpan___" data-uid="System.Reactive.Concurrency.Scheduler.Schedule``1(System.Reactive.Concurrency.IScheduler,``0,System.TimeSpan,System.Action{``0,System.Action{``0,System.TimeSpan}})">Schedule&lt;TState&gt;(IScheduler, TState, TimeSpan, Action&lt;TState, Action&lt;TState, TimeSpan&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed recursively after a specified relative due time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable Schedule&lt;TState&gt;(this IScheduler scheduler, TState state, TimeSpan dueTime, Action&lt;TState, Action&lt;TState, TimeSpan&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the recursive action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Relative time after which to execute the action for the first time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute recursively. The last parameter passed to the action is used to trigger recursive scheduling of the action, passing in the recursive due time and invocation state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_ScheduleLongRunning_System_Reactive_Concurrency_ISchedulerLongRunning_System_Action_System_Reactive_Disposables_ICancelable__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.ScheduleLongRunning(System.Reactive.Concurrency.ISchedulerLongRunning%2CSystem.Action%7BSystem.Reactive.Disposables.ICancelable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Simple.cs/#L70">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_ScheduleLongRunning_" data-uid="System.Reactive.Concurrency.Scheduler.ScheduleLongRunning*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_ScheduleLongRunning_System_Reactive_Concurrency_ISchedulerLongRunning_System_Action_System_Reactive_Disposables_ICancelable__" data-uid="System.Reactive.Concurrency.Scheduler.ScheduleLongRunning(System.Reactive.Concurrency.ISchedulerLongRunning,System.Action{System.Reactive.Disposables.ICancelable})">ScheduleLongRunning(ISchedulerLongRunning, Action&lt;ICancelable&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules an action to be executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable ScheduleLongRunning(this ISchedulerLongRunning scheduler, Action&lt;ICancelable&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ISchedulerLongRunning.html">ISchedulerLongRunning</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="System.Reactive.Disposables.ICancelable.html">ICancelable</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to execute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_SchedulePeriodic_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.SchedulePeriodic(System.Reactive.Concurrency.IScheduler%2CSystem.TimeSpan%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.Emulation.cs/#L77">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic_" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic_System_Reactive_Concurrency_IScheduler_System_TimeSpan_System_Action_" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic(System.Reactive.Concurrency.IScheduler,System.TimeSpan,System.Action)">SchedulePeriodic(IScheduler, TimeSpan, Action)</h4>
+  <div class="markdown level1 summary"><p>Schedules a periodic piece of work by dynamically discovering the scheduler's capabilities.
+If the scheduler supports periodic scheduling, the request will be forwarded to the periodic scheduling implementation.
+If the scheduler provides stopwatch functionality, the periodic task will be emulated using recursive scheduling with a stopwatch to correct for time slippage.
+Otherwise, the periodic task will be emulated using recursive scheduling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable SchedulePeriodic(this IScheduler scheduler, TimeSpan period, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">period</span></td>
+        <td><p>Period for running the work periodically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled recurring action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">period</code> is less than TimeSpan.Zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.SchedulePeriodic%60%601(System.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.TimeSpan%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.Emulation.cs/#L53">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic_" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Action___0__" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic``1(System.Reactive.Concurrency.IScheduler,``0,System.TimeSpan,System.Action{``0})">SchedulePeriodic&lt;TState&gt;(IScheduler, TState, TimeSpan, Action&lt;TState&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules a periodic piece of work by dynamically discovering the scheduler's capabilities.
+If the scheduler supports periodic scheduling, the request will be forwarded to the periodic scheduling implementation.
+If the scheduler provides stopwatch functionality, the periodic task will be emulated using recursive scheduling with a stopwatch to correct for time slippage.
+Otherwise, the periodic task will be emulated using recursive scheduling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable SchedulePeriodic&lt;TState&gt;(this IScheduler scheduler, TState state, TimeSpan period, Action&lt;TState&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to execute the action on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>State passed to the action to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">period</span></td>
+        <td><p>Period for running the work periodically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TState&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled recurring action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">period</code> is less than TimeSpan.Zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Func___0___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.SchedulePeriodic%60%601(System.Reactive.Concurrency.IScheduler%2C%60%600%2CSystem.TimeSpan%2CSystem.Func%7B%60%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.Emulation.cs/#L27">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic_" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_SchedulePeriodic__1_System_Reactive_Concurrency_IScheduler___0_System_TimeSpan_System_Func___0___0__" data-uid="System.Reactive.Concurrency.Scheduler.SchedulePeriodic``1(System.Reactive.Concurrency.IScheduler,``0,System.TimeSpan,System.Func{``0,``0})">SchedulePeriodic&lt;TState&gt;(IScheduler, TState, TimeSpan, Func&lt;TState, TState&gt;)</h4>
+  <div class="markdown level1 summary"><p>Schedules a periodic piece of work by dynamically discovering the scheduler's capabilities.
+If the scheduler supports periodic scheduling, the request will be forwarded to the periodic scheduling implementation.
+If the scheduler provides stopwatch functionality, the periodic task will be emulated using recursive scheduling with a stopwatch to correct for time slippage.
+Otherwise, the periodic task will be emulated using recursive scheduling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable SchedulePeriodic&lt;TState&gt;(this IScheduler scheduler, TState state, TimeSpan period, Func&lt;TState, TState&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>The scheduler to run periodic work on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>Initial state passed to the action upon the first iteration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">period</span></td>
+        <td><p>Period for running the work periodically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TState, TState&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to be executed, potentially updating the state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>The disposable object used to cancel the scheduled recurring action (best effort).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the state passed to the scheduled action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> or <code data-dev-comment-type="paramref" class="paramref">action</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">period</code> is less than TimeSpan.Zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler_StartStopwatch_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler.StartStopwatch(System.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Services.Emulation.cs/#L98">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_Scheduler_StartStopwatch_" data-uid="System.Reactive.Concurrency.Scheduler.StartStopwatch*"></a>
+  <h4 id="System_Reactive_Concurrency_Scheduler_StartStopwatch_System_Reactive_Concurrency_IScheduler_" data-uid="System.Reactive.Concurrency.Scheduler.StartStopwatch(System.Reactive.Concurrency.IScheduler)">StartStopwatch(IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Starts a new stopwatch object by dynamically discovering the scheduler's capabilities.
+If the scheduler provides stopwatch functionality, the request will be forwarded to the stopwatch provider implementation.
+Otherwise, the stopwatch will be emulated using the scheduler's notion of absolute time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStopwatch StartStopwatch(this IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IScheduler.html">IScheduler</a></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>Scheduler to obtain a stopwatch for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.IStopwatch.html">IStopwatch</a></td>
+        <td><p>New stopwatch object; started at the time of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_Scheduler_StartStopwatch_System_Reactive_Concurrency_IScheduler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The resulting stopwatch object can have non-monotonic behavior.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scheduler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_Scheduler.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.Scheduler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/Scheduler.Simple.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

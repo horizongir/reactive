@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObserverBase&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObserverBase&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.ObserverBase`1">
+  
+  
+  <h1 id="System_Reactive_ObserverBase_1" data-uid="System.Reactive.ObserverBase`1" class="text-break">Class ObserverBase&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for implementations of the IObserver&lt;T&gt; interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ObserverBase&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="System.Reactive.AnonymousObserver-1.html">AnonymousObserver&lt;T&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.html">System.Reactive</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Core.dll</h6>
+  <h5 id="System_Reactive_ObserverBase_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ObserverBase&lt;T&gt; : IObserver&lt;T&gt;, IDisposable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_ObserverBase_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This base class enforces the grammar of observers where OnError and OnCompleted are terminal messages.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1__ctor.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L19">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1__ctor_" data-uid="System.Reactive.ObserverBase`1.#ctor*"></a>
+  <h4 id="System_Reactive_ObserverBase_1__ctor" data-uid="System.Reactive.ObserverBase`1.#ctor">ObserverBase()</h4>
+  <div class="markdown level1 summary"><p>Creates a new observer in a non-stopped state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ObserverBase()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_Dispose.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L85">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_Dispose_" data-uid="System.Reactive.ObserverBase`1.Dispose*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_Dispose" data-uid="System.Reactive.ObserverBase`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the observer, causing it to transition to the stopped state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L95">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_Dispose_" data-uid="System.Reactive.ObserverBase`1.Dispose*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_Dispose_System_Boolean_" data-uid="System.Reactive.ObserverBase`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Core implementation of IDisposable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>true if the Dispose call was triggered by the IDisposable.Dispose method; false if it was triggered by the finalizer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnCompleted.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L68">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnCompleted_" data-uid="System.Reactive.ObserverBase`1.OnCompleted*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnCompleted" data-uid="System.Reactive.ObserverBase`1.OnCompleted">OnCompleted()</h4>
+  <div class="markdown level1 summary"><p>Notifies the observer of the end of the sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCompleted()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnCompletedCore.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnCompletedCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L80">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnCompletedCore_" data-uid="System.Reactive.ObserverBase`1.OnCompletedCore*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnCompletedCore" data-uid="System.Reactive.ObserverBase`1.OnCompletedCore">OnCompletedCore()</h4>
+  <div class="markdown level1 summary"><p>Implement this method to react to the end of the sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnCompletedCore()</code></pre>
+  </div>
+  <h5 id="System_Reactive_ObserverBase_1_OnCompletedCore_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only gets called when the observer hasn't stopped yet, and causes the observer to stop.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnError_System_Exception_.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnError(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L46">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnError_" data-uid="System.Reactive.ObserverBase`1.OnError*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnError_System_Exception_" data-uid="System.Reactive.ObserverBase`1.OnError(System.Exception)">OnError(Exception)</h4>
+  <div class="markdown level1 summary"><p>Notifies the observer that an exception has occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnError(Exception error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The error that has occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">error</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnErrorCore_System_Exception_.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnErrorCore(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L62">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnErrorCore_" data-uid="System.Reactive.ObserverBase`1.OnErrorCore*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnErrorCore_System_Exception_" data-uid="System.Reactive.ObserverBase`1.OnErrorCore(System.Exception)">OnErrorCore(Exception)</h4>
+  <div class="markdown level1 summary"><p>Implement this method to react to the occurrence of an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnErrorCore(Exception error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The error that has occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_ObserverBase_1_OnErrorCore_System_Exception__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only gets called when the observer hasn't stopped yet, and causes the observer to stop.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnNext__0_.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnNext(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L28">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnNext_" data-uid="System.Reactive.ObserverBase`1.OnNext*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnNext__0_" data-uid="System.Reactive.ObserverBase`1.OnNext(`0)">OnNext(T)</h4>
+  <div class="markdown level1 summary"><p>Notifies the observer of a new element in the sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnNext(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Next element in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1_OnNextCore__0_.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601.OnNextCore(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L39">View Source</a>
+  </span>
+  <a id="System_Reactive_ObserverBase_1_OnNextCore_" data-uid="System.Reactive.ObserverBase`1.OnNextCore*"></a>
+  <h4 id="System_Reactive_ObserverBase_1_OnNextCore__0_" data-uid="System.Reactive.ObserverBase`1.OnNextCore(`0)">OnNextCore(T)</h4>
+  <div class="markdown level1 summary"><p>Implement this method to react to the receival of a new element in the sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnNextCore(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Next element in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_ObserverBase_1_OnNextCore__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only gets called when the observer hasn't stopped yet.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">System.IObserver&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_ToNotifier__1_System_IObserver___0__">Observer.ToNotifier&lt;T&gt;(IObserver&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_AsObserver__1_System_IObserver___0__">Observer.AsObserver&lt;T&gt;(IObserver&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_Checked__1_System_IObserver___0__">Observer.Checked&lt;T&gt;(IObserver&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Reactive_Concurrency_IScheduler_">Observer.NotifyOn&lt;T&gt;(IObserver&lt;T&gt;, IScheduler)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Reactive.Observer.html#System_Reactive_Observer_NotifyOn__1_System_IObserver___0__System_Threading_SynchronizationContext_">Observer.NotifyOn&lt;T&gt;(IObserver&lt;T&gt;, SynchronizationContext)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_ObserverBase_1.md&amp;value=---%0Auid%3A%20System.Reactive.ObserverBase%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/ObserverBase.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

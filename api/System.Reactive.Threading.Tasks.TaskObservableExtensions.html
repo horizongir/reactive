@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TaskObservableExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TaskObservableExtensions
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions">
+  
+  
+  <h1 id="System_Reactive_Threading_Tasks_TaskObservableExtensions" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions" class="text-break">Class TaskObservableExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a set of static methods for converting tasks to observable sequences.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">TaskObservableExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.Threading.Tasks.html">System.Reactive.Threading.Tasks</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Linq.dll</h6>
+  <h5 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TaskObservableExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable_System_Threading_Tasks_Task_.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable(System.Threading.Tasks.Task)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L24">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable_System_Threading_Tasks_Task_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable(System.Threading.Tasks.Task)">ToObservable(Task)</h4>
+  <div class="markdown level1 summary"><p>Returns an observable sequence that signals when the task completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;Unit&gt; ToObservable(this Task task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Task to convert to an observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="System.Reactive.Unit.html">Unit</a>&gt;</td>
+        <td><p>An observable sequence that produces a unit value when the task completes, or propagates the exception produced by the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable_System_Threading_Tasks_Task__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified task object supports cancellation, consider using <a class="xref" href="System.Reactive.Linq.Observable.html#System_Reactive_Linq_Observable_FromAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__">FromAsync(Func&lt;CancellationToken, Task&gt;)</a> instead.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">task</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable__1_System_Threading_Tasks_Task___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable%60%601(System.Threading.Tasks.Task%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L76">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable__1_System_Threading_Tasks_Task___0__" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToObservable``1(System.Threading.Tasks.Task{``0})">ToObservable&lt;TResult&gt;(Task&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns an observable sequence that propagates the result of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TResult&gt; ToObservable&lt;TResult&gt;(this Task&lt;TResult&gt; task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Task to convert to an observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><p>An observable sequence that produces the task's result, or propagates the exception produced by the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result produced by the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToObservable__1_System_Threading_Tasks_Task___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified task object supports cancellation, consider using <a class="xref" href="System.Reactive.Linq.Observable.html#System_Reactive_Linq_Observable_FromAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___">FromAsync&lt;TResult&gt;(Func&lt;CancellationToken, Task&lt;TResult&gt;&gt;)</a> instead.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">task</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask%60%601(System.IObservable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L127">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask``1(System.IObservable{``0})">ToTask&lt;TResult&gt;(IObservable&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a task that will receive the last value or the exception produced by the observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;TResult&gt; ToTask&lt;TResult&gt;(this IObservable&lt;TResult&gt; observable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">observable</span></td>
+        <td><p>Observable sequence to convert to a task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td><p>A task that will receive the last element or the exception produced by the observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observable</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Object_.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask%60%601(System.IObservable%7B%60%600%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L143">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Object_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask``1(System.IObservable{``0},System.Object)">ToTask&lt;TResult&gt;(IObservable&lt;TResult&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a task that will receive the last value or the exception produced by the observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;TResult&gt; ToTask&lt;TResult&gt;(this IObservable&lt;TResult&gt; observable, object state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">observable</span></td>
+        <td><p>Observable sequence to convert to a task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state to use as the underlying task's AsyncState.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td><p>A task that will receive the last element or the exception produced by the observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observable</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask%60%601(System.IObservable%7B%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L159">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Threading_CancellationToken_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask``1(System.IObservable{``0},System.Threading.CancellationToken)">ToTask&lt;TResult&gt;(IObservable&lt;TResult&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns a task that will receive the last value or the exception produced by the observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;TResult&gt; ToTask&lt;TResult&gt;(this IObservable&lt;TResult&gt; observable, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">observable</span></td>
+        <td><p>Observable sequence to convert to a task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token that can be used to cancel the task, causing unsubscription from the observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td><p>A task that will receive the last element or the exception produced by the observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observable</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Threading_CancellationToken_System_Object_.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask%60%601(System.IObservable%7B%60%600%7D%2CSystem.Threading.CancellationToken%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L176">View Source</a>
+  </span>
+  <a id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask*"></a>
+  <h4 id="System_Reactive_Threading_Tasks_TaskObservableExtensions_ToTask__1_System_IObservable___0__System_Threading_CancellationToken_System_Object_" data-uid="System.Reactive.Threading.Tasks.TaskObservableExtensions.ToTask``1(System.IObservable{``0},System.Threading.CancellationToken,System.Object)">ToTask&lt;TResult&gt;(IObservable&lt;TResult&gt;, CancellationToken, Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a task that will receive the last value or the exception produced by the observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;TResult&gt; ToTask&lt;TResult&gt;(this IObservable&lt;TResult&gt; observable, CancellationToken cancellationToken, object state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">observable</span></td>
+        <td><p>Observable sequence to convert to a task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token that can be used to cancel the task, causing unsubscription from the observable sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state to use as the underlying task's AsyncState.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td><p>A task that will receive the last element or the exception produced by the observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">observable</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Threading_Tasks_TaskObservableExtensions.md&amp;value=---%0Auid%3A%20System.Reactive.Threading.Tasks.TaskObservableExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/Threading/Tasks/TaskObservableExtensions.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

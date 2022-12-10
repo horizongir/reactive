@@ -1,0 +1,1510 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ObservableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ObservableExtensions.html",
+          "hash": "hTDz2oYD9WfrnmALk92MAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.AnonymousObservable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.AnonymousObservable-1.html",
+          "hash": "5fqKquyAtUBcuu5tSdxd6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.AnonymousObserver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.AnonymousObserver-1.html",
+          "hash": "jx89Vc6vVffn5kWnTdQrYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.AsyncLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.AsyncLock.html",
+          "hash": "ZcwK7eOxD6uPjAUhHrKUPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.CurrentThreadScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.CurrentThreadScheduler.html",
+          "hash": "u+4vhyz0MqtciiNJt8TKZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.DefaultScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.DefaultScheduler.html",
+          "hash": "nvHTaoxMFFahrnM1d8rwHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.EventLoopScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.EventLoopScheduler.html",
+          "hash": "DMGgjCvxRLjD9HxzeyhEBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.HistoricalScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.HistoricalScheduler.html",
+          "hash": "grd63xirG+oBqZMA3y/Gug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.HistoricalSchedulerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.HistoricalSchedulerBase.html",
+          "hash": "iGBFX+MCrUwkCJxFCPGsPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.IConcurrencyAbstractionLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.IConcurrencyAbstractionLayer.html",
+          "hash": "oZHd3Am0Wtmx3l81vl6IMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.IScheduledItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.IScheduledItem-1.html",
+          "hash": "lykhLo2dPTWtMtpJF53iAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.IScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.IScheduler.html",
+          "hash": "ksklsG3kuWUFQr6+7cR++w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ISchedulerLongRunning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ISchedulerLongRunning.html",
+          "hash": "Cyw0xt6CEBSiSYZDCHA17g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ISchedulerPeriodic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ISchedulerPeriodic.html",
+          "hash": "Fcbv03jReIpGIdn90c3uUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.IStopwatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.IStopwatch.html",
+          "hash": "+mI1IK7mYZiv2etmz5HSWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.IStopwatchProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.IStopwatchProvider.html",
+          "hash": "Yr4J1L4s6xNFYoRzTxdrtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ImmediateScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ImmediateScheduler.html",
+          "hash": "1KIwdS6zPQGyh+yQEHQXmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.LocalScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.LocalScheduler.html",
+          "hash": "Io7cNO9wHfm3SDMjc3rsdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.NewThreadScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.NewThreadScheduler.html",
+          "hash": "NK6DKETzloQIZC2iyphMRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ScheduledItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ScheduledItem-1.html",
+          "hash": "MlAvAL+cRu9JBsrHnpkzWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ScheduledItem-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ScheduledItem-2.html",
+          "hash": "wgqxgStHunHipxr07+ftMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.Scheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.Scheduler.html",
+          "hash": "4CDY+ldALfF9fhlGxHxG/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.SchedulerQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.SchedulerQueue-1.html",
+          "hash": "d2VMbkFKPOWM6Dwhg9NZ9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.Synchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.Synchronization.html",
+          "hash": "E5UfPxmaU1h/SVzEoqD+3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.SynchronizationContextScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.SynchronizationContextScheduler.html",
+          "hash": "cvo6O+22W/CzO5VawbiJSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.TaskPoolScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.TaskPoolScheduler.html",
+          "hash": "9LtwiIvht7jLs9Aj31hFMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.ThreadPoolScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.ThreadPoolScheduler.html",
+          "hash": "nANhdg984YJW7XWeNGiZgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.VirtualTimeScheduler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.VirtualTimeScheduler-2.html",
+          "hash": "aNTACEBXZCxloQLKzOfzgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.VirtualTimeSchedulerBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.VirtualTimeSchedulerBase-2.html",
+          "hash": "Nuvn4eh/UndyhaEJwXUfQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.VirtualTimeSchedulerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.VirtualTimeSchedulerExtensions.html",
+          "hash": "NyMAvqcVJGUKRRR4qA+jhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Concurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Concurrency.html",
+          "hash": "wq90eWQrFfInkdqQNg5c/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.BooleanDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.BooleanDisposable.html",
+          "hash": "JDuOb/MoDcpuJBNY1HPmPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.CancellationDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.CancellationDisposable.html",
+          "hash": "mSadaIWz+d25M1RIYUTGKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.CompositeDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.CompositeDisposable.html",
+          "hash": "cqVi1rxNIYAdiszUbpOlOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.ContextDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.ContextDisposable.html",
+          "hash": "oK+JyLYGzCLMR6KS8HDCbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.Disposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.Disposable.html",
+          "hash": "OmV00xdDB/iEjvGriVc3cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.ICancelable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.ICancelable.html",
+          "hash": "bpFUyer2CKirU+hn1DxKng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.MultipleAssignmentDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.MultipleAssignmentDisposable.html",
+          "hash": "kTsKJA150eiJKGKSxHo2EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.RefCountDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.RefCountDisposable.html",
+          "hash": "IdETgunnqh6uJoAOGXnrxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.ScheduledDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.ScheduledDisposable.html",
+          "hash": "GbCmNRSXmZGHPkBGtkBRYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.SerialDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.SerialDisposable.html",
+          "hash": "7BRe+1RD4xAwxNP1KwcUrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.SingleAssignmentDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.SingleAssignmentDisposable.html",
+          "hash": "tcuTtKj8pHmOIAPkS24O7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Disposables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Disposables.html",
+          "hash": "lhs566yCyIYOnbQuvzeU5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.EventPattern-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.EventPattern-1.html",
+          "hash": "fYtVNPmL71SvNBnxaMc2iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.EventPattern-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.EventPattern-2.html",
+          "hash": "j3wV9DZqZnxuxzRKbz1wXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.EventPatternSourceBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.EventPatternSourceBase-2.html",
+          "hash": "Gt2X+hBJzD3gpVfPuYposQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.IEventPattern-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.IEventPattern-2.html",
+          "hash": "GHgYeQSOhSQCNGhIKspxVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.IEventPatternSource-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.IEventPatternSource-1.html",
+          "hash": "82I+iz9hayAHS1ANesEPlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.IEventSource-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.IEventSource-1.html",
+          "hash": "Y5MRvaNY142h8JVokWf7qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.IObserver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.IObserver-2.html",
+          "hash": "rAZ60QAuyHoXUTxheXNf5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-1.html",
+          "hash": "+ld7kTUWiSRVd1cVusFCxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-10.html",
+          "hash": "Dk8PTi/vnuOm8xFULY/LyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-11.html",
+          "hash": "pEUabz3WQds/09rzoE7e/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-12.html",
+          "hash": "gX0m/WiEPccaXEE1SmIA3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-13.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-13.html",
+          "hash": "McWE5Fusex48hChEQTJSbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-14.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-14.html",
+          "hash": "lI8BbJ0dVhQzY6GF2+ZqCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-15.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-15.html",
+          "hash": "B86019oQWTmuM81c3FM0eQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-16.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-16.html",
+          "hash": "v85oYbCIXEvsqk3aYOTKLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-2.html",
+          "hash": "P372cEb9xZwehOt/jqj6WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-3.html",
+          "hash": "GA6WSbTaWcp4Fg89HHoRgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-4.html",
+          "hash": "HP0l4eguWmgs4QwPmpRAPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-5.html",
+          "hash": "qxOYP8ts6zK83O07hZNkbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-6.html",
+          "hash": "4YRw1zeeysEAESzZhb31qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-7.html",
+          "hash": "9x33upIPzFjZz5JZmpVlrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-8.html",
+          "hash": "UBH962l5LoVzIOIQF2YQQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern-9.html",
+          "hash": "95cfi22lUXLUF2Q25r8M1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Pattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Pattern.html",
+          "hash": "/2nLAlTqWg7gNzl0VEHelg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.Plan-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.Plan-1.html",
+          "hash": "O9I/rYq2vcBL+MYEG0I0KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Joins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Joins.html",
+          "hash": "EiqvndqBHP+HP0asYyn+8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.IGroupedObservable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.IGroupedObservable-2.html",
+          "hash": "QB9O5NTHoRQ9DQ/b0RT6vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.IQbservable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.IQbservable-1.html",
+          "hash": "IotkiP2isRfjnho9e010Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.IQbservable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.IQbservable.html",
+          "hash": "gGb9etbNtdQNtmJwzPlROg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.IQbservableProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.IQbservableProvider.html",
+          "hash": "GlLi56qhBV06Xp9DO79wHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.LocalQueryMethodImplementationTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.LocalQueryMethodImplementationTypeAttribute.html",
+          "hash": "AOnyp3jx+fC4eHLYNtEGQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.Observable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.Observable.html",
+          "hash": "lrpTToGYMZmGZDYgbv8Ocg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Linq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Linq.html",
+          "hash": "6m5y64naxpuSA1xvnxyPDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Notification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Notification-1.html",
+          "hash": "9o6iHxfsJW6yFCADRuiNJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Notification.html",
+          "hash": "QZW4/zPddqN9Lm5xHMD6LA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.NotificationKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.NotificationKind.html",
+          "hash": "JDZCo5DEW0yKYQfl0gemMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.ObservableBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.ObservableBase-1.html",
+          "hash": "2aYMz9Vwo2h/+r7r0fwvcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Observer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Observer.html",
+          "hash": "yI64Ru48TD8jfqRvRlDLlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.ObserverBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.ObserverBase-1.html",
+          "hash": "ulFLBLoIGU0HsOpjj/aeqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.CurrentPlatformEnlightenmentProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.CurrentPlatformEnlightenmentProvider.html",
+          "hash": "3R4e0qfPYMSlY3waonhf3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.DefaultSystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.DefaultSystemClock.html",
+          "hash": "T3+XXSxuVCKlkA2AuIsluw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.EnlightenmentProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.EnlightenmentProvider.html",
+          "hash": "9Sz+xtMNCpos4PXoxnmDUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.HostLifecycleService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.HostLifecycleService.html",
+          "hash": "B65qeyx1vcRM0K6GY7Cyxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.HostResumingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.HostResumingEventArgs.html",
+          "hash": "Iy7bzQQxzp+2s6HV6LxLxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.HostSuspendingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.HostSuspendingEventArgs.html",
+          "hash": "8gQLF5HO7/W+1ibzlil5yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.IExceptionServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.IExceptionServices.html",
+          "hash": "+HUfxgLABs+zTgNbk+FpIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.IHostLifecycleNotifications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.IHostLifecycleNotifications.html",
+          "hash": "DyvXCikec9aFNnDohdOF2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.INotifySystemClockChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.INotifySystemClockChanged.html",
+          "hash": "pPFO6YTpfmt4PRSKzKtP5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.IPlatformEnlightenmentProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.IPlatformEnlightenmentProvider.html",
+          "hash": "QZnewHWBOAfnbzHWvMq5uQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.ISystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.ISystemClock.html",
+          "hash": "OUxUs5zSb3A7G6luWHLrow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor.html",
+          "hash": "/1sKdup2ofguFYmj3p2+fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.PlatformEnlightenmentProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.PlatformEnlightenmentProvider.html",
+          "hash": "w5MrA95MtnVt0e5CLCZy0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.SystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.SystemClock.html",
+          "hash": "3Lq3RPsZvs2N7iMKttzOgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.SystemClockChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.SystemClockChangedEventArgs.html",
+          "hash": "PXNt6XAnqkA5hDAv7bz9zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.PlatformServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.PlatformServices.html",
+          "hash": "7TdH5vvZ8W+LKyUJH2e6uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.AsyncSubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.AsyncSubject-1.html",
+          "hash": "a63z/OoWBnDy2HkpIGIxeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.BehaviorSubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.BehaviorSubject-1.html",
+          "hash": "Na44MsmBG+BhbMIznfFtHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.IConnectableObservable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.IConnectableObservable-1.html",
+          "hash": "dzkCY029sGajDvo5s2zJYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.ISubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.ISubject-1.html",
+          "hash": "tM3A1iqOLA/YUfhphKfcvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.ISubject-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.ISubject-2.html",
+          "hash": "f6EHDyvmoNaQT4PMk/wtAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.ReplaySubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.ReplaySubject-1.html",
+          "hash": "S2gSqTQBbHc3zr9vS+rmEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.Subject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.Subject-1.html",
+          "hash": "lpVwu2qnsf/aJ9zdtAS/xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.Subject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.Subject.html",
+          "hash": "CKhBZJ47pT1wA/T+8ja9Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Subjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Subjects.html",
+          "hash": "XT39LKRKHP/ovkMu6sE1bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Threading.Tasks.TaskObservableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Threading.Tasks.TaskObservableExtensions.html",
+          "hash": "LO1hM3ViE8BDLVnBOPNFhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Threading.Tasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Threading.Tasks.html",
+          "hash": "OzBu/JQMcu6JC6to82S5VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.TimeInterval-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.TimeInterval-1.html",
+          "hash": "ITBzpyqZijgVxQpzhZXTzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Timestamped-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Timestamped-1.html",
+          "hash": "l4bx4vkTMMKt2sMzh1gUNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Timestamped.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Timestamped.html",
+          "hash": "793Ihz2JeAtzGazlmw3aJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.Unit.html",
+          "hash": "wj/xQ+agM4WVaZNl/86RTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Reactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Reactive.html",
+          "hash": "xu0e6jOp+miatmOpHLIj3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.html",
+          "hash": "UXISuzGBQ2hm2MHcSxiAuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "2yZd569mFrP5KoHcXglbFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "moMq/vM1OEnIUhnrxFeRzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "lSJcZmeYttdJS2Ne0ZfZKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 115,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventPatternSourceBase&lt;TSender, TEventArgs&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventPatternSourceBase&lt;TSender, TEventArgs&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.EventPatternSourceBase`2">
+  
+  
+  <h1 id="System_Reactive_EventPatternSourceBase_2" data-uid="System.Reactive.EventPatternSourceBase`2" class="text-break">Class EventPatternSourceBase&lt;TSender, TEventArgs&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for classes that expose an observable sequence as a well-known event pattern (sender, event arguments).
+Contains functionality to maintain a map of event handler delegates to observable sequence subscriptions. Subclasses
+should only add an event with custom add and remove methods calling into the base class's operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EventPatternSourceBase&lt;TSender, TEventArgs&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.html">System.Reactive</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Linq.dll</h6>
+  <h5 id="System_Reactive_EventPatternSourceBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class EventPatternSourceBase&lt;TSender, TEventArgs&gt;
+    where TEventArgs : EventArgs</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSender</span></td>
+        <td><p>The type of the sender that raises the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEventArgs</span></td>
+        <td><p>The type of the event data generated by the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_EventPatternSourceBase_2__ctor_System_IObservable_System_Reactive_EventPattern__0__1___System_Action_System_Action__0__1__System_Reactive_EventPattern__0__1___.md&amp;value=---%0Auid%3A%20System.Reactive.EventPatternSourceBase%602.%23ctor(System.IObservable%7BSystem.Reactive.EventPattern%7B%600%2C%601%7D%7D%2CSystem.Action%7BSystem.Action%7B%600%2C%601%7D%2CSystem.Reactive.EventPattern%7B%600%2C%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/EventPatternSourceBase.cs/#L29">View Source</a>
+  </span>
+  <a id="System_Reactive_EventPatternSourceBase_2__ctor_" data-uid="System.Reactive.EventPatternSourceBase`2.#ctor*"></a>
+  <h4 id="System_Reactive_EventPatternSourceBase_2__ctor_System_IObservable_System_Reactive_EventPattern__0__1___System_Action_System_Action__0__1__System_Reactive_EventPattern__0__1___" data-uid="System.Reactive.EventPatternSourceBase`2.#ctor(System.IObservable{System.Reactive.EventPattern{`0,`1}},System.Action{System.Action{`0,`1},System.Reactive.EventPattern{`0,`1}})">EventPatternSourceBase(IObservable&lt;EventPattern&lt;TSender, TEventArgs&gt;&gt;, Action&lt;Action&lt;TSender, TEventArgs&gt;, EventPattern&lt;TSender, TEventArgs&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new event pattern source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EventPatternSourceBase(IObservable&lt;EventPattern&lt;TSender, TEventArgs&gt;&gt; source, Action&lt;Action&lt;TSender, TEventArgs&gt;, EventPattern&lt;TSender, TEventArgs&gt;&gt; invokeHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="System.Reactive.EventPattern-2.html">EventPattern</a>&lt;TSender, TEventArgs&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source sequence to expose as an event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TSender, TEventArgs&gt;, <a class="xref" href="System.Reactive.EventPattern-2.html">EventPattern</a>&lt;TSender, TEventArgs&gt;&gt;</td>
+        <td><span class="parametername">invokeHandler</span></td>
+        <td><p>Delegate used to invoke the event for each element of the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">source</code> or <code data-dev-comment-type="paramref" class="paramref">invokeHandler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_EventPatternSourceBase_2_Add_System_Delegate_System_Action__0__1__.md&amp;value=---%0Auid%3A%20System.Reactive.EventPatternSourceBase%602.Add(System.Delegate%2CSystem.Action%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/EventPatternSourceBase.cs/#L47">View Source</a>
+  </span>
+  <a id="System_Reactive_EventPatternSourceBase_2_Add_" data-uid="System.Reactive.EventPatternSourceBase`2.Add*"></a>
+  <h4 id="System_Reactive_EventPatternSourceBase_2_Add_System_Delegate_System_Action__0__1__" data-uid="System.Reactive.EventPatternSourceBase`2.Add(System.Delegate,System.Action{`0,`1})">Add(Delegate, Action&lt;TSender, TEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified event handler, causing a subscription to the underlying source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Add(Delegate handler, Action&lt;TSender, TEventArgs&gt; invoke)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Event handler to add. The same delegate should be passed to the Remove operation in order to remove the event handler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TSender, TEventArgs&gt;</td>
+        <td><span class="parametername">invoke</span></td>
+        <td><p>Invocation delegate to raise the event in the derived class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handler</code> or <code data-dev-comment-type="paramref" class="paramref">invoke</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_EventPatternSourceBase_2_Remove_System_Delegate_.md&amp;value=---%0Auid%3A%20System.Reactive.EventPatternSourceBase%602.Remove(System.Delegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/EventPatternSourceBase.cs/#L105">View Source</a>
+  </span>
+  <a id="System_Reactive_EventPatternSourceBase_2_Remove_" data-uid="System.Reactive.EventPatternSourceBase`2.Remove*"></a>
+  <h4 id="System_Reactive_EventPatternSourceBase_2_Remove_System_Delegate_" data-uid="System.Reactive.EventPatternSourceBase`2.Remove(System.Delegate)">Remove(Delegate)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified event handler, causing a disposal of the corresponding subscription to the underlying source that was created during the Add operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Remove(Delegate handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Event handler to remove. This should be the same delegate as one that was passed to the Add operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handler</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_EventPatternSourceBase_2.md&amp;value=---%0Auid%3A%20System.Reactive.EventPatternSourceBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Linq/Reactive/EventPatternSourceBase.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

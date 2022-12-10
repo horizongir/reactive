@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScheduledItem&lt;TAbsolute&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScheduledItem&lt;TAbsolute&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="System.Reactive.Concurrency.ScheduledItem`1">
+  
+  
+  <h1 id="System_Reactive_Concurrency_ScheduledItem_1" data-uid="System.Reactive.Concurrency.ScheduledItem`1" class="text-break">Class ScheduledItem&lt;TAbsolute&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for scheduled work items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ScheduledItem&lt;TAbsolute&gt;</span></div>
+      <div class="level2"><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-2.html">ScheduledItem&lt;TAbsolute, TValue&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="System.Reactive.Concurrency.IScheduledItem-1.html">IScheduledItem</a>&lt;TAbsolute&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.Reactive.Concurrency.html">System.Reactive.Concurrency</a></h6>
+  <h6><strong>Assembly</strong>: System.Reactive.Core.dll</h6>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScheduledItem&lt;TAbsolute&gt; : IScheduledItem&lt;TAbsolute&gt;, IComparable&lt;ScheduledItem&lt;TAbsolute&gt;&gt; where TAbsolute : IComparable&lt;TAbsolute&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAbsolute</span></td>
+        <td><p>Absolute time representation type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1__ctor__0_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.%23ctor(%600%2CSystem.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L25">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1__ctor_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.#ctor*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1__ctor__0_System_Collections_Generic_IComparer__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.#ctor(`0,System.Collections.Generic.IComparer{`0})">ScheduledItem(TAbsolute, IComparer&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new scheduled work item to run at the specified time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScheduledItem(TAbsolute dueTime, IComparer&lt;TAbsolute&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td><p>Absolute time at which the work item has to be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>Comparer used to compare work items based on their scheduled time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">comparer</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_DueTime.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.DueTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L37">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_DueTime_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.DueTime*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_DueTime" data-uid="System.Reactive.Concurrency.ScheduledItem`1.DueTime">DueTime</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute time at which the item is due for invocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TAbsolute DueTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAbsolute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_IsCanceled.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.IsCanceled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L182">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_IsCanceled_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.IsCanceled*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_IsCanceled" data-uid="System.Reactive.Concurrency.ScheduledItem`1.IsCanceled">IsCanceled</h4>
+  <div class="markdown level1 summary"><p>Gets whether the work item has received a cancellation request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCanceled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_Cancel.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L174">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_Cancel_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Cancel*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_Cancel" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>Cancels the work item by disposing the resource returned by InvokeCore as soon as possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_CompareTo_System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.CompareTo(System.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L65">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_CompareTo_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.CompareTo*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_CompareTo_System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.CompareTo(System.Reactive.Concurrency.ScheduledItem{`0})">CompareTo(ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Compares the work item with another work item based on absolute time values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(ScheduledItem&lt;TAbsolute&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Work item to compare the current work item to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Relative ordering between this and the specified work item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_CompareTo_System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The inequality operators are overloaded to provide results consistent with the IComparable implementation. Equality operators implement traditional reference equality semantics.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L155">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_Equals_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Equals*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_Equals_System_Object_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a ScheduledItem&lt;TAbsolute&gt; object is equal to the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare to the current ScheduledItem&lt;TAbsolute&gt; object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the obj parameter is a ScheduledItem&lt;TAbsolute&gt; object and is equal to the current ScheduledItem&lt;TAbsolute&gt; object; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_GetHashCode.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L164">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_GetHashCode_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.GetHashCode*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_GetHashCode" data-uid="System.Reactive.Concurrency.ScheduledItem`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for the current ScheduledItem&lt;TAbsolute&gt; object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A 32-bit signed integer hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_Invoke.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.Invoke%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L45">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_Invoke_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Invoke*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_Invoke" data-uid="System.Reactive.Concurrency.ScheduledItem`1.Invoke">Invoke()</h4>
+  <div class="markdown level1 summary"><p>Invokes the work item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Invoke()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_InvokeCore.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.InvokeCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L55">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_InvokeCore_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.InvokeCore*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_InvokeCore" data-uid="System.Reactive.Concurrency.ScheduledItem`1.InvokeCore">InvokeCore()</h4>
+  <div class="markdown level1 summary"><p>Implement this method to perform the work item invocation, returning a disposable object for deep cancellation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IDisposable InvokeCore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td><p>Disposable object used to cancel the work item and/or derived work items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_Equality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_Equality(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L133">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_Equality_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_Equality*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_Equality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_Equality(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">Equality(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two specified ScheduledItem&lt;TAbsolute, TValue&gt; objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if both ScheduledItem&lt;TAbsolute, TValue&gt; are equal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_Equality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator does not provide results consistent with the IComparable implementation. Instead, it implements reference equality.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_GreaterThan(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L105">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThan_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_GreaterThan*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_GreaterThan(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">GreaterThan(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether one specified ScheduledItem&lt;TAbsolute&gt; object is due after a second specified ScheduledItem&lt;TAbsolute&gt; object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the DueTime value of left is later than the DueTime value of right; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator provides results consistent with the IComparable implementation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_GreaterThanOrEqual(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L117">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThanOrEqual_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_GreaterThanOrEqual*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_GreaterThanOrEqual(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">GreaterThanOrEqual(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether one specified ScheduledItem&lt;TAbsolute&gt; object is due after or at the same time of a second specified ScheduledItem&lt;TAbsolute&gt; object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the DueTime value of left is later than or simultaneous with the DueTime value of right; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_GreaterThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator provides results consistent with the IComparable implementation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_Inequality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_Inequality(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L145">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_Inequality_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_Inequality*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_Inequality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_Inequality(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">Inequality(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two specified ScheduledItem&lt;TAbsolute, TValue&gt; objects are inequal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if both ScheduledItem&lt;TAbsolute, TValue&gt; are inequal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_Inequality_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator does not provide results consistent with the IComparable implementation. Instead, it implements reference equality.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_LessThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_LessThan(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L81">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThan_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_LessThan*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_LessThan(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">LessThan(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether one specified ScheduledItem&lt;TAbsolute&gt; object is due before a second specified ScheduledItem&lt;TAbsolute&gt; object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the DueTime value of left is earlier than the DueTime value of right; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThan_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator provides results consistent with the IComparable implementation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1_op_LessThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601.op_LessThanOrEqual(System.Reactive.Concurrency.ScheduledItem%7B%600%7D%2CSystem.Reactive.Concurrency.ScheduledItem%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L93">View Source</a>
+  </span>
+  <a id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThanOrEqual_" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_LessThanOrEqual*"></a>
+  <h4 id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0__" data-uid="System.Reactive.Concurrency.ScheduledItem`1.op_LessThanOrEqual(System.Reactive.Concurrency.ScheduledItem{`0},System.Reactive.Concurrency.ScheduledItem{`0})">LessThanOrEqual(ScheduledItem&lt;TAbsolute&gt;, ScheduledItem&lt;TAbsolute&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether one specified ScheduledItem&lt;TAbsolute&gt; object is due before or at the same of a second specified ScheduledItem&lt;TAbsolute&gt; object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(ScheduledItem&lt;TAbsolute&gt; left, ScheduledItem&lt;TAbsolute&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Reactive.Concurrency.ScheduledItem-1.html">ScheduledItem</a>&lt;TAbsolute&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the DueTime value of left is earlier than or simultaneous with the DueTime value of right; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="System_Reactive_Concurrency_ScheduledItem_1_op_LessThanOrEqual_System_Reactive_Concurrency_ScheduledItem__0__System_Reactive_Concurrency_ScheduledItem__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operator provides results consistent with the IComparable implementation.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="System.Reactive.Concurrency.IScheduledItem-1.html">IScheduledItem&lt;TAbsolute&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">System.IComparable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/new/docs/v2.2.5/apiSpec/new?filename=System_Reactive_Concurrency_ScheduledItem_1.md&amp;value=---%0Auid%3A%20System.Reactive.Concurrency.ScheduledItem%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/reactive/blob/docs/v2.2.5/Rx.NET/Source/System.Reactive.Core/Reactive/Concurrency/ScheduledItem.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
